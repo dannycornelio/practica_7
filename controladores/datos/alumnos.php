@@ -2,7 +2,7 @@
 require '../../modelos/datos_alumnos.php';
 
 try {
-    $producto = new Producto($_POST);
+    $producto = new Alumnos($_POST);
     $resultado = $producto->guardar();
     $error = "NO se guardó correctamente";
 } catch (PDOException $e) {
@@ -42,7 +42,7 @@ try {
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/practica_7/vistas/datos/index.php" class="btn btn-info">Volver al formulario</a>
+                <a href="/practica_7/vista/datos/index.php" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>
     </div>

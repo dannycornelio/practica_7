@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>App de Tienda</title>
+    <title>RRHH de una escuela</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Formulario de productos</h1>
+        <h1 class="text-center">Formulario de datos de los alumnos</h1>
         <div class="row justify-content-center">
             <form action="/practica_7/controladores/datos/alumnos.php" method="POST" class="col-lg-8 border bg-light p-3">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="codigo">Codigo del alumno</label>
+                        <input type="number" name="codigo" id="codigo" class="form-control">
+                    </div>
+                </div>
                 <div class="row mb-3">
                     <div class="col">
                         <label for="primer_nombre">Primer nombre del estudiante</label>
