@@ -8,53 +8,44 @@
     <title>RRHH de la escuela</title>
 </head>
 <style>
-    body{
-        background-image: url(vista/datos/fondo.jpg);
-    }
-
     h1{
-        background-color: skyblue;
+        background-color: #2ecc71;
         text-align: center;
         font-size: x-large;
         font-family: Arial, Helvetica, sans-serif;
         padding: 5px;
         border-radius: 5px;
+        }
 
-    }
 </style>
 <body>
     <h1 class="display-3">ESCUALE DE INFORMATICA Y TECNOLOGIA</h1>
     <div class="container">
-        <h2 class="text-center">Oficina de Recursos Humanos</h2>
         <h3 class="text-center">Formulario de informacion del alumnos</h3>
         <div class="row justify-content-center">
             <form action="/practica_7/controladores/datos/alumnos.php" method="POST" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-3">
                         <label for="codigo">Codigo del alumno</label>
                         <input type="number" name="codigo" id="codigo" class="form-control" required>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-6">
                         <label for="primer_nombre">Primer nombre del estudiante</label>
                         <input type="text" name="primer_nombre" id="primer_nombre" class="form-control" required>
                     </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-6">
                         <label for="segundo_nombre">Segundo nombre del estudiante</label>
                         <input type="text" name="segundo_nombre" id="segundo_nombre" class="form-control">
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-6">
                         <label for="primer_apellido">Primer apellido del estudiante</label>
                         <input type="text" name="primer_apellido" id="primer_apellido" class="form-control" required>
                     </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
+                  <div class="col-6">
                         <label for="segundo_apellido">Segundo apellido del estudiante</label>
                         <input type="text" name="segundo_apellido" id="segundo_apellido" class="form-control">
                     </div>
@@ -66,20 +57,18 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-6">
                         <label for="telefono">Numero de telefono</label>
                         <input type="number" name="telefono" id="telefono" class="form-control"required>
                     </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-6">
                         <label for="fecha_nacimiento">Fecha de nacimiento</label>
                         <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="form-control" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col">
-                        <button type="submit" class="btn btn-primary w-100">ENVIAR</button>
+                        <button type="submit" class="btn btn-outline-success w-100">ENVIAR</button>
                     </div>
                 </div>
             </form>
